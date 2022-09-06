@@ -1,24 +1,18 @@
-# 3 Напишите программу, которая принимает на вход координаты точки (X и Y)
-# причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости
-# в которой находится эта точка (или на какой оси она находится).
-
-# *Пример:
-# - x=34; y=-30 -> 4
-# - x=2; y=4-> 1
-# - x=-34; y=-30 -> 3
+# 4 Напишите программу, которая по заданному номеру четверти
+# показывает диапазон возможных координат точек в этой четверти (x и y).
 
 
-while True: #использую бесконечный цикл, чтоб не перезапускать программу
+while True: #бесконечный цикл, чтоб не перезапускать программу
 
-    x = float(input("Enter 'x' please: ")) 
-    y = float(input("Enter 'y' please: "))
-    #использую float значение так как не сказано что числа целые
-    
-    if x > 0 and y > 0:
-        print('1st quarter')
-    elif x < 0 and y > 0:
-        print('2nd quarter')
-    elif x < 0 and y < 0:
-        print('3rd quarter')
+    qrt = float(input('Enter the quarter please: '))
+    if 1 <= qrt <= 4:
+        if qrt == 1:
+            print('x = [0; +infinity] and y = [0; +infinity]')
+        elif qrt ==2:
+            print('x = [0; -infinity] and y = [0; +infinity]')
+        elif qrt == 3:
+            print('x = [0; -infinity] and y = [0; -infinity]')
+        else:
+            print('x = [0; +infinity] and y = [0; -infinity]')
     else:
-        print('4th quarter')
+        print('There are only 4 quartees ^_^')
