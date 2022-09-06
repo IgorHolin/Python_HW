@@ -1,18 +1,18 @@
-# 4 Напишите программу, которая по заданному номеру четверти
-# показывает диапазон возможных координат точек в этой четверти (x и y).
+# 5 Напишите программу, которая принимает на вход координаты двух точек
+# и находит расстояние между ними в 2D пространстве.
 
+# *Пример:*
+# - A (3,6); B (2,1) -> 5,09
+# - A (7,-5); B (1,-1) -> 7,21
 
-while True: #бесконечный цикл, чтоб не перезапускать программу
+from math import sqrt
 
-    qrt = float(input('Enter the quarter please: '))
-    if 1 <= qrt <= 4:
-        if qrt == 1:
-            print('x = [0; +infinity] and y = [0; +infinity]')
-        elif qrt ==2:
-            print('x = [0; -infinity] and y = [0; +infinity]')
-        elif qrt == 3:
-            print('x = [0; -infinity] and y = [0; -infinity]')
-        else:
-            print('x = [0; +infinity] and y = [0; -infinity]')
-    else:
-        print('There are only 4 quartees ^_^')
+while True: #чтоб не перезапускать программу
+
+    a1 = float(input("Enter 'X' coordinate of first point: "))
+    b1 = float(input("Enter 'Y' coordinate of first point: "))
+    a2 = float(input("Enter 'X' coordinate of second point: "))
+    b2 = float(input("Enter 'Y' coordinate of second point: "))
+
+    distance = round(sqrt((a2-a1)**2 + (b2-b1)**2), 3)
+    print(distance)
