@@ -7,7 +7,7 @@
 #Строго говоря миниальный остаток в примере это 0 у пятёрки, по этому ответ дан неверный. Верный ответ в данном случае 0.2
 
  
-# Решение сделано под пример
+# Решение сделанное под пример
 
 list = [1.1, 1.2, 3.1, 5, 10.01]
 def find_diff(arr):
@@ -23,5 +23,18 @@ def find_diff(arr):
             minima = arr[k]
     
     return maxima - minima
+
+print(find_diff(list))
+
+# Решение обычное с результатом 0.2
+
+list = [1.1, 1.2, 3.1, 5, 10.01]
+def find_diff(arr):
+    
+    for i in range(len(arr)):
+        arr[i] = arr[i] - int(arr[i])
+        arr[i] = round(arr[i], 2)
+    
+    return (max(arr) - min(arr))
 
 print(find_diff(list))
