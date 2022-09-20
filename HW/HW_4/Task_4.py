@@ -16,6 +16,6 @@ def randomize(power):
     return final_expression
 
 
-with open('homework.txt', 'a') as file:
+with open('task_4.txt', 'a') as file:
     file.writelines(f'{randomize(power)}\n')
 
