@@ -38,4 +38,5 @@ def rle_print(some_list):
     return ''.join(final)
 
 
-print(rle_print(rle_zip(inp)))
+with open('/Users/User/Desktop/GeekBrains/Знакомство с языком Python/Семинары/HW/HW_5/task_4_output.txt', 'w', encoding='UTF-8') as f:
+    f.write(rle_print(rle_zip(inp)))
