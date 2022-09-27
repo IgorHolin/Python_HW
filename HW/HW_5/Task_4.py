@@ -11,6 +11,8 @@ with open('/Users/User/Desktop/GeekBrains/Знакомство с языком P
     inp = list(map(str, f.readline()))
 
 
+# # Алгоритм сжатия
+
 def rle_zip(some_string):
     count = 1
     result = []
@@ -37,6 +39,18 @@ def rle_print(some_list):
             final.append(str(item[1]) + item[0])
     return ''.join(final)
 
+# Алгоритм развёртывания
+
+def rle_unzip(some):
+    res = []
+    for i in some:
+        res.append(i[0] * i[1])
+    return ''.join(res)
+
+
 
 with open('/Users/User/Desktop/GeekBrains/Знакомство с языком Python/Семинары/HW/HW_5/task_4_output.txt', 'w', encoding='UTF-8') as f:
     f.write(rle_print(rle_zip(inp)))
+
+with open('/Users/User/Desktop/GeekBrains/Знакомство с языком Python/Семинары/HW/HW_5/task_4_output_2.txt', 'w', encoding='UTF-8') as f_2:
+    f_2.write(rle_unzip(rle_zip(inp)))
