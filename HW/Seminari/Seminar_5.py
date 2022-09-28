@@ -14,9 +14,9 @@
 
 
 # Map
-lst = [2,1,3,4,5]
-new_lst = list(map(lambda x: x*x, lst))
-print(new_lst)
+# lst = [2,1,3,4,5]
+# new_lst = list(map(lambda x: x*x, lst))
+# print(new_lst)
 
 
 
