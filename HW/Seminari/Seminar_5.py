@@ -14,9 +14,9 @@
 
 
 # Map
-# lst = [2,1,3,4,5]
-# new_lst = list(map(lambda x: x*x, lst))
-# print(new_lst)
+lst = [2,1,3,4,5]
+new_lst = list(map(lambda x: x*x, lst))
+print(new_lst)
 
 
 
@@ -60,9 +60,9 @@
 # Task_3
 # x = 'krg'
 
-lst = 'ajsdnkrg kasmdkrg kakwnkner je erneunte ejntkmhlmnf'
-res = ' '.join((list(filter(lambda x: 'krg' not in x, lst.split()))))
-print(res)
+# lst = 'ajsdnkrg kasmdkrg kakwnkner je erneunte ejntkmhlmnf'
+# res = ' '.join((list(filter(lambda x: 'krg' not in x, lst.split()))))
+# print(res)
 
 
 # Task_2
