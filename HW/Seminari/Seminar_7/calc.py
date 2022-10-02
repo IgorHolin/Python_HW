@@ -1,5 +1,6 @@
 x = 0
 y = 0
+title = ''
 
 def init(a,b):
     global x
@@ -9,16 +10,20 @@ def init(a,b):
 
 
 def sum_f():
-    return x + y
+    title = 'Сумма = '
+    return f'{title}{x + y}'
 
 
 def dif_f():
-    return x - y
+    title = 'Разность = '
+    return f'{title}{x - y}'
 
 
 def mult_f():
-    return x * y
+    title = 'Произведение = '
+    return f'{title}{x * y}'
 
 
 def div_f():
-    x / y
+    title = 'Частное = '
+    return f'{title}{x / y}'
