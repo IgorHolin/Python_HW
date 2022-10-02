@@ -9,6 +9,6 @@ def randomize():
     return f'{surnames[randint(0, len(surnames) -1)]};{names[randint(0, len(names) -1)]};{phone_num[randint(0, len(phone_num) -1)]};{jobs[randint(0, len(jobs) -1)]}\n\n'
 
 
-with open('C:\\Users\\User\\Desktop\\GeekBrains\\Знакомство с языком Python\\Семинары\\HW_7\\database.txt', 'w', encoding="UTF-8") as db:
+with open('C:\\Users\\User\\Desktop\\GeekBrains\\Знакомство с языком Python\\Семинары\\HW\\HW_7\\database.txt', 'w', encoding="UTF-8") as db:
     for _ in range(251):
         db.write(randomize())
