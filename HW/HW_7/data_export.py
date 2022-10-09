@@ -8,7 +8,7 @@ def create_html():
 
     with open('C:\\Users\\User\\Desktop\\GeekBrains\\Знакомство с языком Python\\Семинары\\HW\\HW_7\\data_.html', 'w', encoding="UTF-8") as page:
         page.writelines(html)
-create_html()
+# create_html()
 
 def create_xml():
     xml = '<xml>\n'
@@ -17,4 +17,4 @@ def create_xml():
 
     with open('C:\\Users\\User\\Desktop\\GeekBrains\\Знакомство с языком Python\\Семинары\\HW\\HW_7\\data_.xml', 'w', encoding="UTF-8") as page:
         page.write(xml)
-create_xml()
+# create_xml()
