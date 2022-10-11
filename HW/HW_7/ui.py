@@ -5,4 +5,4 @@ def define_option():
     select = input('Выберите номер операции: ')
     while select != '1' and select != '2' and select != '3' and select != '4' and select != '':
         select = input('Введите номер опреации, пожалуйста: ') 
-    return int(select)
+    return select

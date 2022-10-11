@@ -1,6 +1,7 @@
-from process import process as start
+from process import process
+from ui import define_option
+
 
 print('Добро пожаловать в базу данных!')
-flag = True
-while flag:
-    start()
+a = define_option()
+process(a)
